@@ -9,7 +9,7 @@
     var hero = document.createElement('div');
     hero.className = 'video-hero';
     hero.innerHTML =
-      '<video class="video-hero__bg" autoplay muted loop playsinline preload="metadata" poster="/img/Undoom.png">' +
+      '<video class="video-hero__bg" autoplay muted loop playsinline preload="metadata">' +
       '<source src="/img/mc-snow-spruce.mp4" type="video/mp4">' +
       '</video>' +
       '<div class="video-hero__overlay"></div>' +

@@ -1,12 +1,15 @@
 .video-hero {
-  position: relative;
-  height: 52vh;
-  min-height: 320px;
-  max-height: 560px;
-  margin: 16px auto 20px;
-  border-radius: 18px;
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  margin: 0;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.28);
+  box-shadow: none;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .video-hero__bg {
@@ -49,18 +52,34 @@
 }
 
 #page-header.full_page {
-  height: auto;
-  min-height: 0;
+  position: relative;
+  height: 100vh;
+  min-height: 460px;
+  background: #060b12 !important;
+  overflow: hidden;
+}
+
+#page-header.full_page::before {
+  background: transparent !important;
 }
 
 #page-header.full_page #site-info {
-  padding-top: 0;
+  position: relative;
+  z-index: 2;
+}
+
+#page-header.full_page #nav,
+#page-header.full_page #scroll-down {
+  position: relative;
+  z-index: 3;
 }
 
 @media (max-width: 768px) {
   .video-hero {
-    height: 42vh;
-    min-height: 250px;
-    margin: 10px 12px 16px;
+    inset: 0;
+  }
+
+  #page-header.full_page {
+    min-height: 380px;
   }
 }

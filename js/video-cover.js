@@ -15,7 +15,7 @@
       '<div class="video-hero__overlay"></div>' +
       '<div class="video-hero__text"><h2>雪落云杉，欢迎来到我的博客</h2><p>将这段视频作为首页开场封面</p></div>';
 
-    nav.insertAdjacentElement('afterend', hero);
+    header.insertAdjacentElement('afterbegin', hero);
   }
 
   document.addEventListener('DOMContentLoaded', mountVideoHero);

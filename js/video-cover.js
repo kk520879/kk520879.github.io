@@ -9,9 +9,7 @@
     var hero = document.createElement('div');
     hero.className = 'video-hero';
     hero.innerHTML =
-      '<video class="video-hero__bg" autoplay muted loop playsinline preload="auto">' +
-      '<source src="/img/4month4day.mp4" type="video/mp4">' +
-      '</video>' +
+      '<img class="video-hero__bg" src="/img/converted.gif" alt="">' +
       '<div class="video-hero__overlay"></div>';
 
     header.insertAdjacentElement('afterbegin', hero);

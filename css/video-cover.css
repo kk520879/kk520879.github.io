@@ -68,8 +68,7 @@
   z-index: 2;
 }
 
-#page-header.full_page #nav,
-#page-header.full_page #scroll-down {
+#page-header.full_page #nav {
   position: relative;
   z-index: 3;
 }
